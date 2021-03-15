@@ -134,7 +134,103 @@
                     </ul>
                 </div>
                 </nav>
+                <div class="py-3">
+                    <div class="px-4 mb-3"><a class="btn text-black-50 p-0" role="button" href="system-pacjenci.html"><i class="la la-angle-left mr-1"></i><span>Powrót do listy pacjentów</span></a></div>
+                    <div class="d-flex justify-content-between px-4">
+                        <h3 class="text-dark d-flex justify-content-between align-items-baseline flex-wrap mb-3"><span class="mr-3 font-weight-bold">Adam Achmistrowicz-Wachmistrowicz</span><small class="border rounded-0 border-secondary py-1 px-2"><small class="text-black-50 mr-2">PESEL</small><span>72011209456</span></small>
+                        </h3>
+                    </div>
+                    <div class="px-4">
+                        <ul class="nav nav-tabs mb-4">
+                            <li class="nav-item"><a class="nav-link" href="system-pacjent.html">Dane pacjenta</a></li>
+                            <li class="nav-item"><a class="nav-link" href="system-pacjent-swiadczenia.html">Świadczenia</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="system-pacjent-karta-pacjenta.html">Karta pacjenta</a></li>
+                            <li class="nav-item"><a class="nav-link" href="system-pacjent-deklaracja.html">Deklaracja uczestnictwa</a></li>
+                            <li class="nav-item"><a class="nav-link" href="system-pacjent-dokumenty.html">Dokumenty</a></li>
+                            <li class="nav-item"><a class="nav-link" href="system-pacjent-karta-monitorowania.html">Karta monitorowania</a></li>
+                        </ul>
+                    </div>
+                    <div class="px-4">
+                        <form>
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-1" required=""><label class="custom-control-label" for="formCheck-1">Stwierdzono brak przeciwwskazań do przeprowadzenia obowiązkowego szczepienia ochronnego przeciw:<br></label></div>
+                                        <div
+                                            class="pl-4 mt-1">
+                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-38"><label class="custom-control-label" for="formCheck-1">pneumokokom</label></div>
+                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-44"><label class="custom-control-label" for="formCheck-1">grypie</label></div>
+                                            <p>w okresie do 24 godzin od przeprowadzenia badania kwalifikacyjnego</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-3"><label class="custom-control-label" for="formCheck-1">Stwierdzono przeciwwskazania do przeprowadzenia obowiązkowego szczepienia ochronnego przeciw:</label></div>
+                                    <div
+                                        class="pl-4 mt-1">
+                                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-45"><label class="custom-control-label" for="formCheck-1">pneumokokom</label></div>
+                                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-46"><label class="custom-control-label" for="formCheck-1">grypie</label></div>
+                                        <p class="mb-2">dające podstawy do odroczenia wykonania szczepienia do dnia</p>
+                                        <div><input class="form-control form-control-sm width--200" type="date"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-5"><label class="custom-control-label" for="formCheck-1">Stwierdzono przeciwwskazania do przeprowadzenia szczepienia, dające podstawy do długotrwałego odroczenia wykonania szczepienia</label></div>
+                            </div>
+                            <div class="form-group mb-0"><label>Uwagi i zalecenia</label><textarea class="form-control" rows="6"></textarea></div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p>Szczepionka przeciw</p>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-2" required=""><label class="custom-control-label" for="formCheck-1">Pneumokoki<br></label></div>
+                            <div class="pl-4 mt-1">
+                                <div class="form-row">
+                                    <div class="col-xl-3"><label class="col-form-label">Data i godzina szczepienia</label></div>
+                                    <div class="col-3"><input class="form-control form-control-sm" type="date"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-xl-3"><label class="col-form-label">Nazwa szczepionki</label></div>
+                                    <div class="col-3"><input class="form-control form-control-sm" type="text"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-xl-3"><label class="col-form-label">Seria</label></div>
+                                    <div class="col-3"><input class="form-control form-control-sm" type="text"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-xl-3"><label class="col-form-label">Miejsce wkłucia</label></div>
+                                    <div class="col-3"><input class="form-control form-control-sm" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-0">
+                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-4" required=""><label class="custom-control-label" for="formCheck-1">Grypa<br></label></div>
+                            <div class="pl-4 mt-1">
+                                <div class="form-row">
+                                    <div class="col-xl-3"><label class="col-form-label">Data i godzina szczepienia</label></div>
+                                    <div class="col-3"><input class="form-control form-control-sm" type="date"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-xl-3"><label class="col-form-label">Nazwa szczepionki</label></div>
+                                    <div class="col-3"><input class="form-control form-control-sm" type="text"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-xl-3"><label class="col-form-label">Seria</label></div>
+                                    <div class="col-3"><input class="form-control form-control-sm" type="text"></div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-xl-3"><label class="col-form-label">Miejsce wkłucia</label></div>
+                                    <div class="col-3"><input class="form-control form-control-sm" type="text"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group"><button class="btn btn-primary" type="button">Wyślij</button></div>
+                </form>
             </div>
+    </div>
+    </div>
     </div>
     </div>
     </div>

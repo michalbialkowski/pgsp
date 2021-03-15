@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
-<body class="bg-light">
+<body>
     <div>
         <main>
             <div>
@@ -21,19 +21,24 @@
                     <div class="row no-gutters flex-wrap" style="min-height: 100vh;">
                         <div class="col-auto d-none d-lg-flex flex-lg-column justify-content-lg-between py-3 bg-dark">
                             <ul class="nav flex-column">
-                                <li class="nav-item"><a class="nav-link active text-white px-4" href="#"><i class="icon-grid"></i><span class="pl-3">Start</span></a></li>
-                                <li class="nav-item mt-3"><a class="nav-link active text-white px-4" href="system-rejestracja.html"><i class="icon-user-follow"></i><span class="pl-3">Rejestracja pacjenta</span></a></li>
-                                <li class="nav-item mt-3"><a class="nav-link active text-white px-4" href="system-pacjenci.html"><i class="icon-people"></i><span class="pl-3">Lista pacjentów</span></a></li>
-                                <li class="nav-item"><a class="nav-link active text-white px-4" href="#"><i class="icon-cloud-download"></i><span class="pl-3">Eksport pacjentów</span></a></li>
-                                <li class="nav-item mt-3"><a class="nav-link active text-white px-4" href="#"><i class="icon-doc"></i><span class="pl-3">Raporty</span></a></li>
-                                <li class="nav-item"><a class="nav-link active text-white px-4" href="#"><i class="icon-chart"></i><span class="pl-3">Statystyki</span></a></li>
-                                <li class="nav-item mt-3"><a class="nav-link active text-white px-4" href="#"><i class="icon-people"></i><span class="pl-3">Lista użytkowników</span></a></li>
-                                <li class="nav-item"><a class="nav-link active text-white px-4" href="#"><i class="icon-organization"></i><span class="pl-3">Lista jednostek</span></a></li>
+                                <li class="nav-item"><a class="nav-link active text-white px-4" href="#"><i class="icon-grid"></i><span class="pl-3">Start</span></a><a class="nav-link text-white px-4" href="system-rejestracja.html"><i class="icon-user-follow"></i><span class="pl-3">Rejestracja pacjenta</span></a>
+                                    <a
+                                        class="nav-link text-white px-4" href="#"><i class="icon-people"></i><span class="pl-3">Lista pacjentów</span></a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link active text-center text-white px-4" href="#"><i class="icon-menu"></i></a></li>
+                                <li class="nav-item"></li>
                             </ul>
                         </div>
                         <div class="col">
-                            <nav class="navbar navbar-light navbar-expand bg-white shadow-sm topbar static-top">
-                                <div class="container-fluid"><button class="btn btn-info btn-sm d-flex align-items-center rounded-pill px-3" type="button"><i class="icon-menu mr-2"></i><span class="text-uppercase">Zwiń menu</span></button>
+                            <nav class="navbar navbar-light navbar-expand bg-light shadow-sm topbar static-top">
+                                <div class="container-fluid">
+                                    <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                                        <div class="input-group rounded-pill overflow-hidden border"><input class="form-control border-0 pl-3" type="text" placeholder="Wyszukaj…">
+                                            <div class="input-group-append"><button class="btn btn-primary pr-3" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
                                     <ul class="nav navbar-nav text-right align-items-center flex-nowrap ml-auto">
                                         <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
                                             <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown">
@@ -134,6 +139,67 @@
                     </ul>
                 </div>
                 </nav>
+                <div class="p-4">
+                    <div class="mb-3"><a class="btn text-black-50 p-0" role="button" href="system-pacjenci.html"><i class="la la-angle-left mr-1"></i><span>Powrót do listy pacjentów</span></a></div>
+                    <div class="d-flex justify-content-between">
+                        <h3 class="text-dark mb-3">Karta pacjenta</h3>
+                    </div>
+                    <ul class="nav nav-tabs mb-4">
+                        <li class="nav-item"><a class="nav-link" href="system-pacjent.html">Dane pacjenta</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="system-pacjent-badania.html">Badania</a></li>
+                        <li class="nav-item"><a class="nav-link" href="system-pacjent-wyniki.html">Wyniki</a></li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="table-responsive">
+                                <table class="table table-sm mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-black-50"><small class="text-nowrap d-block">Imię</small></td>
+                                            <td>Adam</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-black-50"><small class="text-nowrap d-block">Nazwisko</small></td>
+                                            <td>Achmistrowicz-Wachmistrowicz</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-black-50"><small class="text-nowrap d-block">Numer PESEL</small></td>
+                                            <td>72011209456</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-black-50"><small class="text-nowrap d-block">Nr dok. tożsamości</small></td>
+                                            <td>DVW 123456</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-black-50"><small class="d-block">Płeć</small></td>
+                                            <td>mężczyzna</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-black-50"><small class="text-nowrap d-block">Data urodzenia</small></td>
+                                            <td>12.01.1972</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-black-50"><small class="text-nowrap d-block">Miejsce urodzenia</small></td>
+                                            <td>Siemieniakowszczyzna</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-black-50"><small class="text-nowrap d-block">Wykształcenie</small></td>
+                                            <td>Wyższe</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow">
+                                <div class="card-header py-3">
+                                    <h3 class="text-primary h5 m-0">Badania</h3>
+                                </div>
+                                <div class="card-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
     </div>
     </div>
